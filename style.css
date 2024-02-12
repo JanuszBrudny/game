@@ -1,0 +1,266 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--maincolor: #fb8500;
+	--secondcolor: #ffb703;
+	--thridcolor: #de3939;
+}
+
+body {
+	font-family: "Rowdies", sans-serif;
+	background-color: royalblue;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	overflow: hidden;
+}
+.wrapper {
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.startpage-popup {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: #ffb703;
+}
+h1 {
+	text-transform: uppercase;
+	font-size: 1.4rem;
+}
+.name-info {
+	margin-bottom: 10px;
+	font-size: 1.4rem;
+}
+
+.player-name {
+	padding: 10px 30px;
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+	font-size: 1rem;
+}
+
+.nameBtn {
+	width: 150px;
+	height: 100px;
+	padding: 20px;
+	margin: 0 auto;
+	background-color: var(--thridcolor);
+	border: none;
+	border-radius: 50%;
+	color: aliceblue;
+	font-size: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	border: solid 2px black;
+	cursor: pointer;
+}
+.nameBtn:hover {
+	background-color: #cb7676;
+}
+.game-info {
+	display: none;
+	width: 100vw;
+	height: 100%;
+}
+.active {
+	display: block;
+}
+
+.aboutme-info {
+	position: relative;
+	background-image: url(./img/coding-924920_1280.jpg);
+	height: 800px;
+	background-position: center;
+	background-size: cover;
+}
+
+.hero-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.hero-text {
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	padding: 10px 0;
+	transform: translate(-50%, 0%);
+	text-align: center;
+	color: #f8edeb;
+	font-size: 1rem;
+}
+.game-rulez-info {
+	padding: 10px 0;
+}
+.gameBtn {
+	margin-top: 20px;
+}
+.gameBtn:hover {
+	background-color: #cb7676;
+}
+
+.gamePlay {
+	display: none;
+	background-color: var(--maincolor);
+	width: 100%;
+	height: 100vh;
+}
+.active-gameplay {
+	display: block;
+}
+
+.choice-buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 100%;
+	padding-bottom: 20px;
+}
+.game-buttons {
+	font-size: 1.2rem;
+}
+.game-buttons:hover {
+	background-color: aqua;
+}
+.option-choice {
+	padding-top: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2rem;
+	color: #f8edeb;
+}
+.score-window {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	background-color: var(--secondcolor);
+}
+.score-points {
+	margin: 20px;
+	width: 50vw;
+	height: 80px;
+	background-color: #f8edeb;
+	border: solid 1px black;
+	border-radius: 8px;
+}
+.score-name {
+	text-align: center;
+	font-size: 1rem;
+}
+.score-number {
+	text-align: center;
+	padding-top: 10px;
+	font-size: 2rem;
+}
+
+.game-choice {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 75vh;
+	background-color: var(--secondcolor);
+}
+.player-choice,
+.cpu-choice {
+	width: 200px;
+	height: 100px;
+	background-color: #0b3616;
+	border: solid 1px black;
+}
+
+.player-choice-name,
+.cpu-name {
+	margin: 5px;
+	color: #f8edeb;
+	font-size: 1rem;
+}
+.player-choice-info,
+.cpu-choice-info {
+	text-align: center;
+	color: #f8edeb;
+	font-size: 1.2rem;
+}
+.win-or-lose {
+	text-align: center;
+	font-size: 2rem;
+	color: #de3939;
+}
+.next-round-btn {
+	font-size: 1rem;
+}
+.footer {
+	height: 40px;
+	background-color: var(--thridcolor);
+}
+.footer-text {
+	text-align: center;
+	font-size: 1rem;
+}
+
+.end-game {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 75vw;
+	height: 75vh;
+	background-color: #fb8500;
+	border: #de3939 solid 5px;
+	border-radius: 16px;
+}
+.end-game-active {
+	display: block;
+}
+.end-game-text,
+.leave-game-text {
+	margin-top: 30%;
+	padding-top: 10%;
+	text-align: center;
+	font-size: 1.5rem;
+	color: #f8edeb;
+}
+
+.end-game-btn {
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 1rem;
+}
+
+@media (min-width: 576px) {
+	.hero-text {
+		font-size: 2rem;
+	}
+	.choice-buttons {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.game-choice {
+		height: 100vh;
+	}
+}
+@media (min-width: 992px) {
+	.end-game-text,
+	.leave-game-text {
+		margin: 0 auto;
+		font-size: 2rem;
+	}
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="PL">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;700&family=Rowdies:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="./style.css"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<div class="startpage-popup wrapper">
+				<h1>Kamień Papier Nożyce</h1>
+
+				<div class="name-input">
+					<p class="name-info">Podaj swoje imię:</p>
+					<input
+						type="text"
+						class="player-name"
+					/>
+				</div>
+
+				<button class="nameBtn">Dalej</button>
+			</div>
+
+			<div class="game-info wrapper active">
+				<div class="aboutme-info">
+					<div class="hero-bg"></div>
+					<div class="hero-text">
+						<p>
+							Witaj <span class="player-name-info"></span> nazywam się Janusz
+							jestem początkującym front-end developerem i w ramach ćwiczeń
+							wykonałem webową wersję gry KAMIEŃ PAPIER NOŻYCE.Poniżej
+							przedstawiam zasady gry:
+						</p>
+
+						<p class="game-rulez-info">Kto jest silniejszy:</p>
+						<ul>
+							<li>nożyce są silniejsze od papieru, ponieważ go tną,</li>
+							<li>kamień jest silniejszy od nożyc, ponieważ je tępi,</li>
+							<li>papier jest silniejszy od kamienia, ponieważ go owija.</li>
+							<li>Wygrywa ten kto pierwszy uzyska 3 punkty</li>
+						</ul>
+
+						<button class="nameBtn gameBtn">graj</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="end-game wrapper">
+				<p class="end-game-text">Gratulacje wygrałeś</p>
+				<p class="leave-game-text">Dziękuje za wspólną zabawe</p>
+				<button class="end-game-btn nameBtn">zagraj ponownie</button>
+			</div>
+
+			<div class="gamePlay wrapper active-gameplay">
+				<p class="option-choice">wybierz opcje</p>
+				<div class="choice-buttons">
+					<button class="nameBtn game-buttons stone">kamień</button>
+					<button class="nameBtn game-buttons paper">papier</button>
+					<button class="nameBtn game-buttons scisors">nożyce</button>
+				</div>
+			</div>
+
+			<div class="score-window wrapper">
+				<div class="score-points player">
+					<p class="score-name"></p>
+					<p class="score-number score-number-player"></p>
+				</div>
+				<div class="score-points cpu">
+					<p class="score-name">CPU</p>
+					<p class="score-number score-number-cpu"></p>
+				</div>
+			</div>
+
+			<div class="game-choice wrapper">
+				<div class="player-choice">
+					<p class="player-choice-name"></p>
+					<p class="player-choice-info"></p>
+				</div>
+
+				<div class="cpu-choice">
+					<p class="cpu-name">CPU</p>
+					<p class="cpu-choice-info"></p>
+				</div>
+				<p class="win-or-lose"></p>
+				<button class="next-round-btn nameBtn">następna runda</button>
+			</div>
+		</main>
+		<footer class="footer wrapper">
+			<p class="footer-text">
+				&copy; <span class="footer-year"></span>Jonek home development studio
+			</p>
+		</footer>
+		<script src="./script.js"></script>
+	</body>
+</html>
