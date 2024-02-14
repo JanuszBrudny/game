@@ -27,7 +27,7 @@ const leaveGameText = document.querySelector(".end-game-text");
 let playerScore = 0;
 let cpuScore = 0;
 const restoreGame = () => {
-	window.location.reload(true);
+	window.location.reload();
 };
 
 const showAboutme = () => {
