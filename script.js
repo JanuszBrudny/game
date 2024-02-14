@@ -26,6 +26,9 @@ const leaveGameText = document.querySelector(".end-game-text");
 
 let playerScore = 0;
 let cpuScore = 0;
+const restoreGame = () => {
+	window.location.reload(true);
+};
 
 const showAboutme = () => {
 	playerNameInfo.textContent = playerNameInput.value;
@@ -158,9 +161,7 @@ const paperChoice = () => {
 const nxtRound = () => {
 	gamePlay.classList.add("active-gameplay");
 };
-const restoreGame = () => {
-	window.location.reload(true);
-};
+
 nameBtn.addEventListener("click", showAboutme);
 startGameBtn.addEventListener("click", goToGame);
 stoneBtn.addEventListener("click", stoneChoice);
