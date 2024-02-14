@@ -14,7 +14,7 @@ body {
 	background-color: royalblue;
 	font-size: 62.5%;
 	scroll-behavior: smooth;
-	overflow: visible;
+	overflow: hidden;
 }
 .wrapper {
 	width: 100%;
@@ -50,14 +50,14 @@ h1 {
 
 .nameBtn {
 	width: 150px;
-	height: 100px;
+	height: 80px;
 	padding: 20px;
 	margin: 0 auto;
 	background-color: var(--thridcolor);
 	border: none;
 	border-radius: 50%;
 	color: aliceblue;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
@@ -71,6 +71,7 @@ h1 {
 	display: none;
 	width: 100vw;
 	height: 100vh;
+	overflow: visible;
 }
 .active {
 	display: block;
@@ -79,7 +80,7 @@ h1 {
 .aboutme-info {
 	position: relative;
 	background-image: url(./img/coding-924920_1280.jpg);
-	height: 800px;
+	height: 100vh;
 	background-position: center;
 	background-size: cover;
 }
@@ -92,11 +93,8 @@ h1 {
 }
 .hero-text {
 	position: absolute;
-	top: 0%;
-	left: 50%;
-	padding: 10px 0;
-	transform: translate(-50%, 0%);
 	text-align: center;
+
 	color: #f8edeb;
 	font-size: 1rem;
 }
@@ -174,7 +172,6 @@ h1 {
 	width: 100%;
 	height: 75vh;
 	background-color: var(--secondcolor);
-	
 }
 .player-choice,
 .cpu-choice {
