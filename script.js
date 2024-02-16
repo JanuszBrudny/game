@@ -29,6 +29,7 @@ let cpuScore = 0;
 const restoreGame = () => {
 	startPage.style.display = "flex";
 	gameInfo.classList.add("active");
+	gamePlay.classList.add("active-gameplay");
 	playerScore = 0;
 	cpuScore = 0;
 	leaveGamePopup.classList.remove("end-game-active");
