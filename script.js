@@ -29,9 +29,9 @@ let cpuScore = 0;
 const restoreGame = () => {
 	startPage.style.display = "flex";
 	gameInfo.classList.add("active");
-	leaveGamePopup.classList.remove("end-game-active");
 	playerScore = 0;
 	cpuScore = 0;
+	leaveGamePopup.classList.remove("end-game-active");
 };
 
 const showAboutme = () => {
