@@ -56,7 +56,7 @@ h1 {
 	border: none;
 	border-radius: 50%;
 	color: aliceblue;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
@@ -93,7 +93,6 @@ h1 {
 .hero-text {
 	position: absolute;
 	text-align: center;
-
 	color: #f8edeb;
 	font-size: 1rem;
 }
@@ -135,7 +134,7 @@ h1 {
 	padding-top: 20px;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: #f8edeb;
 }
 .score-window {
@@ -144,11 +143,12 @@ h1 {
 	width: 100%;
 	height: 100%;
 	background-color: var(--secondcolor);
+	
 }
 .score-points {
 	margin: 20px;
 	width: 50vw;
-	height: 80px;
+	height: 60px;
 	background-color: #f8edeb;
 	border: solid 1px black;
 	border-radius: 8px;
@@ -159,25 +159,26 @@ h1 {
 }
 .score-number {
 	text-align: center;
-	padding-top: 10px;
-	font-size: 2rem;
+	padding-top: 5px;
+	font-size: 1.5rem;
 }
 
 .game-choice {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: flex-start;
 	width: 100%;
-	height: 75vh;
+	height: 100vh;
 	background-color: var(--secondcolor);
 }
 .player-choice,
 .cpu-choice {
-	width: 200px;
-	height: 100px;
+	width: 150px;
+	height: 70px;
 	background-color: #0b3616;
 	border: solid 1px black;
+	margin: 10px;
 }
 
 .player-choice-name,
@@ -199,17 +200,7 @@ h1 {
 }
 .next-round-btn {
 	font-size: 1rem;
-}
-.footer {
-	width: 100vw;
-	height: 100vh;
-	background-color: var(--thridcolor);
-	text-align: center;
-}
-.footer-text {
-	padding: 20px;
-	text-align: center;
-	font-size: 1rem;
+	margin-top: 10px;
 }
 
 .end-game {
@@ -242,6 +233,7 @@ h1 {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: 1rem;
+	padding: 10px;
 }
 
 @media (min-width: 576px) {
@@ -253,20 +245,20 @@ h1 {
 		flex-direction: row;
 		justify-content: space-between;
 	}
-	.game-choice {
-	
-
-		width: 100%;
-		height: 100vh;
-	}
-	.player-choice,
-	.cpu-choice {
-		width: 150px;
-		height: 75px;
-		
+}
+@media (min-width: 768px) {
+	.hero-text {
+		font-size: 1.2rem;
 	}
 }
+
 @media (min-width: 992px) {
+	.player-choice,
+	.cpu-choice {
+		width: 200px;
+		height: 100px;
+		margin: 30px;
+	}
 	.end-game-text,
 	.leave-game-text {
 		margin: 0 auto;
